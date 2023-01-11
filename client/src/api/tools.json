@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "ChatGPT",
+        "imgURL": "https://pic.clubic.com/v1/images/2070942/raw",
+        "siteURL": "https://chatgpt.com",
+        "category": "👾 Chatbots",
+        "description": "ChatGPT is a free, open-source chatbot that uses GPT-3 to generate responses."
+    },
+    {
+        "id": 2,
+        "name": "Tome App",
+        "imgURL": "https://pbs.twimg.com/profile_images/1585024887109738496/cmGTemZx_400x400.png",
+        "siteURL": "https://tome.app",
+        "category": "🎯 Productivity",
+        "description": "Ai presentation assistant that helps you create and deliver presentations with ease."
+    },
+    {
+        "id": 3,
+        "name": "PyTorch",
+        "imgURL": "https://pytorch.org/tutorials/_static/img/thumbnails/cropped/profiler.png",
+        "siteURL": "https://pytorch.org",
+        "category": "📖 Learning",
+        "description": "GPT-3 Sandbox is a free, open-source tool that allows you to experiment with GPT-3."
+    },
+    {
+        "id": 4,
+        "name": "Jasper AI",
+        "imgURL": "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_f8f324101efad07fbbf0f0272bfe0cb9/jasper-ai.jpg",
+        "siteURL": "https://jasper.ai",
+        "category": "🎯 Productivity",
+        "description": "Jasper is a virtual assistant that helps you get things done."
+    }
+]

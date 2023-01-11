@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.search-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: gray;
+  }
+.card{
+  background-color: #131315;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+  margin: 10px 0;
+  padding: 10px;
+  width: 340px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+.card img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 29px;
+  padding: 1rem;
+  min-height: 270px;
+  
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.card-body h3{
+  font-family: 'Unbounded', cursive;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.card-body p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 10px 0;
+    color: #999;
+}
+.card-body a{
+  text-decoration: none;
+  font-family: 'Unbounded', cursive;
+  background-color: #FF00D6;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 12px;
+}
+.card-body .Categ{
+    font-size: smaller;
+    border-radius: 21px;
+    padding: 3px 17px;
+    color: white;
+    border: 2px solid pink;
+    background: linear-gradient(#101010, #101010) padding-box,
+    linear-gradient(134.61deg, #FF00D6 0%, #4D00EC 46.35%, #00C2FF 100%) border-box;
+    border-radius: 52px;
+    border: 2px solid transparent;
+}
+.Categorie{
+  font-size: smaller;
+  border-radius: 21px;
+  padding: 3px 17px;
+  color: white;
+  background: linear-gradient(#101010, #101010) padding-box,
+  linear-gradient(134.61deg, #FF00D6 0%, #4D00EC 46.35%, #00C2FF 100%) border-box;
+  border-radius: 52px;
+  border: 2px solid transparent;
+  margin: 5px 10px;
+}

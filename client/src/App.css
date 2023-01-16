@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+p{
+  font-family: 'Inter', sans-serif;
+}
 .search-icon {
     position: absolute;
     top: 10px;
@@ -91,4 +94,31 @@
   border-radius: 52px;
   border: 2px solid transparent;
   margin: 5px 10px;
+}
+
+.NewsBar{
+  font-family: 'inter', sans-serif;
+  color: rgb(81, 81, 81);
+  font-weight: 600;
+}
+.NewsBar span{
+  background-color: #73148573;
+    color: #ff00d6;
+    font-size: smaller;
+    padding: 3px;
+    border-radius: 4px;
+}
+.Info__Card{
+  display: flex;
+  background-color: #6700568a;
+  padding: 1rem;
+  border-radius: 15px;
+  align-items: center;
+}
+.Info__Card__Icon{
+  border-radius: 46px;
+  margin: 0 10px;
+  background-color: #000000bd;
+  padding: 0.8rem;
+  color: #ff00d6;
 }

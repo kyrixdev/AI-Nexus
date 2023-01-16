@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import ListTools from './ListTools';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Icon from './Images/Icon.png';
+import WhoAreWe from './WhoAreWe';
 
 function App() {
   const [tool, setTool] = useState([]);
@@ -25,21 +26,21 @@ function App() {
     <HelmetProvider>
       <Helmet>
         <title>
-          AI Compass | Central Location for AI Resources. 
+          AI Nexus | Central Location for AI Resources. 
         </title>
         <link rel="icon" href={Icon} />
-        <meta name="description" content="AI Compass is a central location for AI resources. We provide a list of tools, tutorials, and articles to help you learn about AI." />
+        <meta name="description" content="AI Nexus is a central location for AI resources. We provide a list of tools, tutorials, and articles to help you learn about AI." />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@AICompass" />
-        <meta name="twitter:title" content="AI Compass | Central Location for AI Resources." />
-        <meta name="twitter:description" content="AI Compass is a central location for AI resources. We provide a list of tools, tutorials, and articles to help you learn about AI." />
-        <meta name="twitter:image" content="https://aicompass.com/images/ai-compass-logo.png" />
-        <meta property="og:site_name" content="AI Compass" />
+        <meta name="twitter:site" content="@AINexus" />
+        <meta name="twitter:title" content="AI Nexus | Central Location for AI Resources." />
+        <meta name="twitter:description" content="AI Nexus is a central location for AI resources. We provide a list of tools, tutorials, and articles to help you learn about AI." />
+        <meta name="twitter:image" content="" />
+        <meta property="og:site_name" content="AI Nexus" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:url" content="https://aicompass.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="AI Compass | Central Location for AI Resources." />
-        <meta property="og:description" content="AI Compass is a central location for AI resources. We provide a list of tools, tutorials, and articles to help you learn about AI." />
+        <meta property="og:title" content="AI Nexus | Central Location for AI Resources." />
+        <meta property="og:description" content="AI Nexus is a central location for AI resources. We provide a list of tools, tutorials, and articles to help you learn about AI." />
         <meta property="og:image" content="https://aicompass.com/images/ai-compass-logo.png" />
       </Helmet>
       <div className="header container mx-auto">
@@ -49,6 +50,7 @@ function App() {
         <div className="tool-list">
           <ListTools searchQuery={tool} itemsPerPage={8}/>
         </div>
+        <WhoAreWe />
         </main>
       </div>
     </HelmetProvider>

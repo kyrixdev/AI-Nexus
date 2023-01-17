@@ -37,7 +37,7 @@ const WhoAreWe = () => {
                   <FontAwesomeIcon icon={faRobot} size='2x' />
                 </div>
                 <div className='Info__Card__Text'>
-                  <h1 className='text-xl'>1000+</h1>
+                  <h1 className='text-xl'>100+</h1>
                   <p className='text-lg text-gray-400'>Tools</p>
                 </div>
               </div>

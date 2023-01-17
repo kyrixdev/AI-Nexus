@@ -5,6 +5,7 @@ import ListTools from './ListTools';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Icon from './Images/Icon.png';
 import WhoAreWe from './WhoAreWe';
+import NewsletterForm from './Advertise';
 
 function App() {
   const [tool, setTool] = useState([]);
@@ -51,6 +52,7 @@ function App() {
           <ListTools searchQuery={tool} itemsPerPage={8}/>
         </div>
         <WhoAreWe />
+        <NewsletterForm />
         </main>
       </div>
     </HelmetProvider>

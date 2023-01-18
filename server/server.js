@@ -5,8 +5,10 @@ const port = 5000;
 const cors = require('cors');
 let server;
 server = app.listen(port, () => console.log(`AI Nexus API | Listening on port ${port}`));
+
+
 app.use(cors({
-  origin: ['http://localhost:3000']
+  origin: ['http://localhost:3000' , 'http://66.11.118.4:3000']
 }))
 
 

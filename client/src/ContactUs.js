@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
+import Scale from './Images/Scale-rocket.png';
 const ContactUs = () => {
 
   const form = useRef();
@@ -45,7 +45,11 @@ const ContactUs = () => {
                         </div>
                     </div>
                 </div>
-
+                <div className='basis-1/3'>
+                    <div className="newsletter-image">
+                      <img src={Scale} alt="" />
+                    </div>
+                </div>
             </div>
         </div>
     </section>

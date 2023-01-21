@@ -1,10 +1,14 @@
 import React from 'react';
 
-const SearchBar = ({setSearchQuery}) => {
+
+const SearchBar = ({searchQuery, setSearchQuery}) => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   
-  const handleSubmit = (e) => e.preventDefault();
   const handleSearchChange = (e) => {
-    setSearchQuery(e.target.value);
+    const filteredTools = searchQuery.filter(tool => tool.name.toLowerCase().includes(e.target.value.toLowerCase()) || tool.description.toLowerCase().includes(e.target.value.toLowerCase()))
+    setSearchQuery(filteredTools);
   };
   return (
     <div className="relative rounded-md shadow-sm">

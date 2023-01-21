@@ -26,7 +26,7 @@ app.get('/getTools', function(req, res){
 })
 
 app.post('/api/submit-email', (req, res) => {
-  const { email, message } = req.body;
+  const { email } = req.body;
   fs.readFile("emails.json", (err, data) => {
     if (err) {
       res.status(500).json({ message: err.message });
@@ -35,7 +35,7 @@ app.post('/api/submit-email', (req, res) => {
 
     let emails = JSON.parse(data);
     if(!emails) emails = []
-    emails.push({ email, message });
+    emails.push({ email });
 
     fs.writeFile('emails.json', JSON.stringify(emails), (err) => {
       if (err) {
@@ -45,6 +45,5 @@ app.post('/api/submit-email', (req, res) => {
 
       res.json({ message: '✅It was very nice to hear from you.' });
     });
-  });
-  server.close();
+  }); 
 });

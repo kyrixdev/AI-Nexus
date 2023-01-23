@@ -95,6 +95,16 @@ p{
   border: 2px solid transparent;
   margin: 5px 10px;
 }
+.Btn-color{
+  font-size: smaller;
+  border-radius: 21px;
+  padding: 3px 17px;
+  color: white;
+  background: linear-gradient(#101010, #101010) padding-box,
+  linear-gradient(134.61deg, #FF00D6 0%, #4D00EC 46.35%, #00C2FF 100%) border-box;
+  border-radius: 52px;
+  border: 2px solid transparent;
+}
 
 .NewsBar{
   font-family: 'inter', sans-serif;
@@ -110,7 +120,6 @@ p{
 }
 .Info__Card{
   display: flex;
-  background-color: #6700568a;
   padding: 1rem;
   border-radius: 15px;
   align-items: center;
@@ -118,7 +127,12 @@ p{
 .Info__Card__Icon{
   border-radius: 46px;
   margin: 0 10px;
-  background-color: #000000bd;
+  background-image: radial-gradient( circle farthest-corner at 32.7% 82.7%, rgba(173,0,171,1) 8.3%, rgba(15,51,92,1) 79.4% );
   padding: 0.8rem;
-  color: #ff00d6;
+  color: #ffffff;
+}
+.custom-border{
+  background: linear-gradient(#050208, #050208) padding-box,
+    linear-gradient(134.61deg, #FF00D6 0%, #4D00EC 46.35%, #00C2FF 100%) border-box;
+  border-top: 2px solid transparent;
 }

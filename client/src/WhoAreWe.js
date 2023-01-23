@@ -25,15 +25,6 @@ const WhoAreWe = () => {
               </div>
               <div className='Info__Card mx-4 my-4 lg:my-0'>
               <div className='Info__Card__Icon'>
-                  <FontAwesomeIcon icon={faUsers} size='2x' />
-                </div>
-                <div className='Info__Card__Text'>
-                  <h1 className='text-xl'>1000+</h1>
-                  <p className='text-lg text-gray-400'>Tools</p>
-                </div>
-              </div>
-              <div className='Info__Card mx-4 my-4 lg:my-0'>
-              <div className='Info__Card__Icon'>
                   <FontAwesomeIcon icon={faRobot} size='2x' />
                 </div>
                 <div className='Info__Card__Text'>

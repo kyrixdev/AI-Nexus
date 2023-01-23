@@ -40,14 +40,14 @@ const ContactUs = () => {
                             />
                             <input type="text" name="user_message" className='p-4 w-full lg:w-2/4 border bg-black border-solid border-pink-500 block leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5 focus:outline-none focus:shadow-outline-blue focus:border-pink-300 placeholder-gray-500 text-gray-200 rounded-md' placeholder="Message"  />
                             <br />
-                            <button type="submit" className='mx-6 Categorie'>Get in touch</button>
+                            <button type="submit" className='Btn-color'>Get in touch</button>
                             </form>
                         </div>
                     </div>
                 </div>
                 <div className='basis-1/3'>
                     <div className="newsletter-image">
-                      <img src={Scale} alt="" />
+                      <img src={Scale} alt="" className='mx-auto' />
                     </div>
                 </div>
             </div>

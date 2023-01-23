@@ -7,15 +7,18 @@ import Icon from './Images/Icon.png';
 import WhoAreWe from './WhoAreWe';
 import ContactUs from './ContactUs';
 import NewsletterForm from './Newsletter';
+import Footer from './footer';
 
 function App() {
   const [tool, setTool] = useState([]);
-  
+  const [originalList, setOriginalList] = useState([]);
+
   useEffect(() => {
     const fetchTools = async () => {
       await fetch("http://66.11.118.4:5000/getTools")
         .then((res) => res.json())
         .then((tool) => {
+          setOriginalList(tool);
           setTool(tool);
         });
     };
@@ -45,9 +48,10 @@ function App() {
         <meta property="og:description" content="AI Nexus is a central location for AI resources. We provide a list of tools, tutorials, and articles to help you learn about AI." />
         <meta property="og:image" content="https://aicompass.com/images/ai-compass-logo.png" />
       </Helmet>
-      <div className="header container mx-auto">
+      <div className="container mx-auto">
         <Header />
-        <SearchBar searchQuery={tool} setSearchQuery={setTool} />
+        <SearchBar searchQuery={tool} setSearchQuery={setTool} originalList={originalList}/>
+      
         <main>
         <div className="tool-list">
           <ListTools searchQuery={tool} itemsPerPage={8}/>
@@ -55,9 +59,12 @@ function App() {
         <WhoAreWe />
         <ContactUs />
         <NewsletterForm />
-
         </main>
-      </div>
+        </div>
+        
+        <Footer />
+       
+      
     </HelmetProvider>
   );
 }

@@ -7,6 +7,7 @@ let server;
 server = app.listen(port, () => console.log(`AI Nexus API | Listening on port ${port}`));
 
 
+
 app.use(cors({
   origin: ['http://localhost:3000' , 'http://66.11.118.4:3000']
 }))
@@ -35,7 +36,7 @@ app.post('/api/submit-email', (req, res) => {
 
     let emails = JSON.parse(data);
     if(!emails) emails = []
-    emails.push({ email });
+    emails.push( email );
 
     fs.writeFile('emails.json', JSON.stringify(emails), (err) => {
       if (err) {
@@ -43,7 +44,7 @@ app.post('/api/submit-email', (req, res) => {
         return;
       }
 
-      res.json({ message: '✅It was very nice to hear from you.' });
+      res.json({ message: '✅ It was very nice to hear from you.' });
     });
   }); 
 });

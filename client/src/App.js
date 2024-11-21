@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     const fetchTools = async () => {
-      await fetch("http://66.11.118.4:5000/getTools")
+      await fetch("https://kyrix.dev/ainexus/api/getTools")
         .then((res) => res.json())
         .then((tool) => {
           setOriginalList(tool);

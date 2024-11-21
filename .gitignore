@@ -1,2 +1,13 @@
+# Ignore Node.js dependencies for both client and server
+server/node_modules/
+client/node_modules/
+
+# Ignore build directory for client
+client/build/
+
+# Ignore specific JSON files
 server/emails.json
 server/tools.json
+server/server.key
+server/server.cert
+.gitignore

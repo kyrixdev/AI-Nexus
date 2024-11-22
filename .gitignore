@@ -10,4 +10,4 @@ server/emails.json
 server/tools.json
 server/server.key
 server/server.cert
-.gitignore
+server/.env

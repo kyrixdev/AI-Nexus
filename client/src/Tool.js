@@ -2,8 +2,6 @@ import './App.css';
 
 const Tool = ({ tool }) => {
   return (
-    // add tailwindcss classes to the divs
-    
       <div className="card">
         <img src={tool.imgURL} alt={tool.name} width={200}/>
         <div className="card-body">
